@@ -1,0 +1,860 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Desktop layout for CHOA">
+
+	<title>Children's Healthcare of Atlanta</title>
+
+	<!-- Bootstrap and Other CSS -->
+	<link href="components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+
+	<!-- type -->
+	<!-- Google Fonts: Nunito = Gotham Rounded. http://www.google.com/fonts/#UsePlace:use/Collection:Nunito:700,400 -->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito:700">
+
+	<!-- Yamm Styles-->
+	<link href="yamm/yamm.css" rel="stylesheet">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+	<!-- Lightbox styles -->
+	<link href="css/ekko-lightbox.css" rel="stylesheet">
+
+	<!-- Main Styles -->
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+
+	<!-- IE Shiv -->
+	<!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.js"></script>
+	<![endif]-->
+
+</head>
+
+<body class="asthma" data-spy="scroll" data-target=".scrollspy"> <!-- invoke scrollspay in body tag. -->
+
+	<div class="container-fluid"> 
+		<div class="row">
+			<nav class="navbar yamm navbar-default">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<i class="fa fa-bars"></i>
+					</button>
+					<a href="home.html">
+						<img src="img/logo.png" class="img-responsive visible-xs" id="image2"  alt="Child banner">
+						<img src="img/search.jpg" class="img-responsive visible-xs" id="image3"  alt="Child banner">
+					</a>
+				</div>
+
+				<div id="navbar" class="navbar-collapse collapse">
+					<div class="container navbar-bg-col">
+						<ul class="nav navbar-nav" id="primary-nav">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><strong>Medical Services</strong></a>
+								<ul class="dropdown-menu" role="menu">
+									<div class="yamm-content">
+										<ul class="col-md-4 list-unstyled">
+											<li><strong>FEATURED SERVICES</strong></li>
+											<li><a href="asthma.html"> Asthma</a></li>
+											<li><a href="#"> Cancer</a></li>
+											<li><a href="#"> Cardiac</a></li>
+											<li><a href="#"> Concussion </a></li>
+											<li><a href="#"> Diabetes</a></li>
+											<li><a href="#"> Surgery</a></li>
+											<li><a href="#"> Health & Wellness</li>
+											<li><a href="#"> Urgent Care</a></li>
+											<li><a href="#"> Emergency Care</a></li>
+											<li><a href="#"> &nbsp;</a></li>
+											<li><a href="#"> &nbsp;</a></li>
+										</ul>
+
+										<ul class="col-md-4 list-unstyled">
+											<li> <strong>ALL SERVICES</strong></li>
+											<li><a href="#"> Airway, Breathing & Lungs</a></li>
+											<li><a href="#"> Autism & Developmental Disorders</a></li>
+											<li><a href="#"> Bone, Joint & Muscles</a></li> 
+											<li><a href="#"> Brain & Nervous System</a></li>
+											<li><a href="#"> Cancers & Tumors</a></li>
+											<li><a href="#"> Chromosomal & Genetics</a></li>
+											<li><a href="#"> Common Childhood Conditions</a></li>
+											<li><a href="#"> Dental & Mouth</a></li>
+											<li><a href="#"> Digestive & Gastrointestinal</a></li>
+										</ul>
+
+										<ul class="col-md-4 list-unstyled">
+											<li><a href="#"> Endocrine & Immune System</a></li>
+											<li><a href="#"> Eye, Ear, Nose & Throat </a></li>
+											<li><a href="#"> Heart & Blood</a></li>
+											<li><a href="#"> Infectious Diseases</a></li>
+											<li><a href="#"> Kidney, Reproductive & Urinary</a></li>
+											<li><a href="#"> Medical Procedures</a></li>
+											<li><a href="#"> Medical Tests</a></li>
+											<li><a href="#"> Rehabilitation & Therapy Services</a></li>
+											<li><a href="#"> Sports-Related Services</a></li>
+											<li><a href="#"> Basic Hospital Services</a></li>
+										</ul>
+									</div>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><strong>Patients</strong></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">Patients</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><strong>Visitors</strong></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">Visitors</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><strong>Donors & Volunteers</strong></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">Donors and Volunteers</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><strong>Medical Professionals</strong></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">Medical Professionals</a></li>
+								</ul>
+							</li>
+							<!-- Search -->
+							<li class="hidden-xs">
+								<div class="inner-addon right-addon">
+									<i class="glyphicon glyphicon-search"></i>
+									<input type="text" class="form-control search-bar" placeholder="Search">
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="container navbar-bg-col-1">
+						<div class="nav navbar-bg-col-1">
+							<ul class="nav navbar-nav" id="subnav-1">
+								<li><a href="#"><span class="glyphicon glyphicon-search hidden-xs" aria-hidden="true"></span>Find a Doctor</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-map-marker hidden-xs" aria-hidden="true"></span>Locations</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-calendar hidden-xs" aria-hidden="true"></span>Appointment</a></li> 
+								<li><a href="#"><span class="glyphicon glyphicon-list-alt hidden-xs" aria-hidden="true"></span>Referral</a></li> 
+								<li><a href="#"><span class="glyphicon glyphicon-equalizer hidden-xs" aria-hidden="true"></span>MYchart</a></li> 
+								<li><a href="#"><span class="glyphicon glyphicon-info-sign hidden-xs" aria-hidden="true"></span>About Us</a></li>
+							</ul>
+						</div>
+					</div>
+				</div> <!--/#nav.nav-collapse -->
+			</nav>
+		</div> <!-- row -->
+
+		<div class="row">
+			<!--brand banner-->
+			<div class="hidden-xs">
+				<a href="home.html">
+					<img src="img/logo_choa-noBanner.png" class="img-responsive" id="desktop-logo" alt="Child banner">
+				</a>
+			</div>
+		</div> <!-- row -->
+
+		<div class="row">
+			<div class="bread-container">
+				<ul class="breadcrumbs">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Medical Services</a></li>
+					<li><a href="#" class="selected">Asthma</a></li>
+				</ul>
+			</div> <!-- END bread-container -->
+		</div> <!-- row -->
+
+		<!-- Hero image -->
+		<div class="row">
+			<div class="jumbotron" id="hero-image">
+				<div class="container jumboContainer">
+					<div class="jumboChild">
+						<img src="img/icons/lung.png" class="img-responsive page-content" id="image-icon" alt="Asthma Lung icon">
+						<h1 class="col-white">Asthma</h1>
+						<p class="page-content hidden-xs">When your child can't breathe, it can be scary. Really scary. At Children's, you have an entire team of experts on your side-helping to create an asthma action plan and take control of your child's condition.</p>
+					</div>
+				</div>
+				<div class="jumbotronOverlay"></div>
+			</div>
+		</div> <!-- row -->
+
+		<!-- Opening page statement for mobile -->
+		<div class="row">
+				<p class="page-content openingStatement hidden-sm hidden-md hidden-lg">When your child can't breathe, it can be scary. Really scary. At Children's, you have an entire team of experts on your side-helping to create an asthma action plan and take control of your child's condition.</p>
+		</div> <!-- row -->
+
+		<h2 id="pageNavTitleMobile" class="page-content hidden-md">Page Navigation</h2>
+
+		<!-- content goes no bigger than 1400px -->
+		<div class="constrain-width">
+
+			<!-- main content row -->
+			<div class="row">
+				<div id="content-panels" class="col-md-10">
+
+					<section id="diagnose">
+						<div class="panel panel-default clearfix">
+
+							<div class="panel-heading">
+								<h3 class="panel-title first"><i class="fa fa-plus-circle"></i>Diagnose</h3>
+							</div>
+
+							<div class="panelWrapper col-md-8">
+
+								<div class="panel-body">
+									<div>
+										<h2>What Is Asthma?</h2>
+										<p class="intro">Asthma is a chronic lung condition affecting the tubes that carry air in and out of the lungs, called airways. In a child with asthma, these tubes react to certain triggers, causing:</p>
+
+										<ul class="plain">
+											<li>The airways to swell</li>
+											<li>Thick, sticky mucus to fill the airways</li>
+											<li>The muscles that wrap around the airways to squeeze tight</li>
+										</ul>
+
+										<p class="intro">Common symptoms of Asthma:</p>
+
+										<ul class="plain">
+											<li>Cough with or without phlegm</li>
+											<li>Shortness of breath that worsens with activity</li>
+											<li>Chest pain, congestion, or tightness</li>
+											<li>Wheezing or whistling when exhaling</li>
+										</ul>
+
+ 										<ul class="stand-alone">
+											<li>
+												<a href="asthma_learn-more.html">Learn more about Asthma
+													<i class="fa fa-chevron-circle-right"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div> <!-- END panel-body -->
+
+								<div class="panel-body">
+									<div>
+										<h2>How To Identify An Asthma Attack</h2>
+										<p class="intro">Asthma attacks are caused when the airways in the lungs are bothered by an asthma trigger. Here are signs that your child may be having asthma problems:</p>
+
+										<ul class="plain">
+											<li>Very short of breath</li>
+											<li>Continual coughing</li>
+											<li>Skin between ribs pulling inward</li>
+											<li>Bluish color to lips or fingernails</li>
+											<li>Difficulty completing a sentence without taking a breath</li>
+										</ul>
+
+ 										<ul class="stand-alone">
+											<li>
+												<a href="#">Learn more about Asthma attacks
+													<i class="fa fa-chevron-circle-right"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div> <!-- END panel-body -->
+
+								<div class="panel-body">
+									<div>
+										<h2>Asthma & Allergies</h2>
+										<p class="intro">Asthma and allergies are different conditions, but they often go hand-in-hand. The same substances that trigger your child's allergy symptoms can also cause asthma signs and symptoms. Common triggers in Georgia are pollen, dust mites, and pet dander.</p>
+
+										<p class="intro">Most treatments are designed to treat either asthma or allergies. But a few treatments help with both conditions. Ask your child's doctor for more information.</p>
+									</div>
+								</div> <!-- END panel-body -->
+
+							</div> <!-- END panelWrapper -->
+
+							<div class="relatedContent col-md-4">
+
+								<!-- ANOTHER VIDEO TEST - this passes YT parameters -->
+								<p>
+									<a class="youtube" href="https://www.youtube.com/watch?v=RDLyPm6NpIU">Another Youtube Lightbox</a>
+								</p>
+
+								<!-- Videos in Related Content: Bootstrap 3 Lightbox -->
+								<a data-toggle="lightbox" data-title="Working Youtube Video" data-footer="This is a Youtube video in development." data-remote="https://www.youtube.com/watch?v=RDLyPm6NpIU">
+									<div class="video vid-image col-sm-6 col-md-12" id="vid-asthma1">
+										<div class="container videoContainer">
+											<div class="videoChild">
+												<img src="img/icons/video_play.png" class="img-responsive page-content" id="image-icon" alt="Play icon">
+												<p>Asthma FPO Content 1<p>
+											</div>
+										</div>
+										<div class="videoOverlay"></div>
+									</div>
+								</a>
+
+								<a class="" data-toggle="lightbox" data-title="Working Youtube Video" data-footer="This is a Youtube video in development." data-remote="https://www.youtube.com/watch?v=RDLyPm6NpIU">
+									<div class="video vid-image col-sm-6 col-md-12" id="vid-asthma2">
+										<div class="container videoContainer">
+											<div class="videoChild">
+												<img src="img/icons/video_play.png" class="img-responsive page-content" id="image-icon" alt="Play icon">
+												<p>Asthma FPO Content 2</p>
+											</div>
+										</div>
+										<div class="videoOverlay"></div>
+									</div>
+								</a>
+
+								<a class="" data-toggle="lightbox" data-title="Working Youtube Video" data-footer="This is a Youtube video in development." data-remote="https://www.youtube.com/watch?v=RDLyPm6NpIU">
+									<div class="video vid-image col-sm-6 col-md-12" id="vid-asthma3">
+										<div class="container videoContainer">
+											<div class="videoChild">
+												<img src="img/icons/video_play.png" class="img-responsive page-content" id="image-icon" alt="Play icon">
+												<p>Asthma FPO Content 3</p>
+											</div>
+										</div>
+										<div class="videoOverlay"></div>
+									</div>
+								</a>
+
+							</div> <!-- END relatedContent -->
+
+						</div>
+					</section>
+
+					<section id="take-action">
+						<div class="panel panel-default clearfix">
+
+							<div class="panel-heading">
+								<h3 class="panel-title"><i class="fa fa-plus-circle"></i>Take Action</h3>
+							</div>
+
+							<div class="panelWrapper col-md-8">
+
+								<div class="panel-body">
+									<div>
+										<h2>Steps To Get Help</h2>
+										<p class="intro">When asthma isn't well controlled, it can result in emergency room visits and life-threatening situations. We can help you stay in control of your child's asthma.</p>
+
+										<ol>
+											<li>Contact your child's Pediatrician
+												<ul>
+													<li>
+														<a href="#">Find a doctor
+															<i class="fa fa-chevron-circle-right"></i>
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>Pediatrician required to make a referral
+												<ul>
+													<li>
+														<a href="#">Make or get a referral
+															<i class="fa fa-chevron-circle-right"></i>
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>Set up an initial consultation for your child
+												<ul>
+													<li>
+														<a href="#">Make an appointment
+															<i class="fa fa-chevron-circle-right"></i>
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>Take Action
+												<ul>
+													<li>
+														<a href="#">Download the Asthma Action Plan PDF
+															<i class="fa fa-chevron-circle-right"></i>
+														</a>
+													</li>
+												</ul>
+											</li>
+										</ol> 
+
+									</div>
+								</div>
+
+								<div class="panel-body">
+									<div>
+										<h2>Meet Our Expert Team</h2>
+										<p class="intro">The Children’s Healthcare of Atlanta Asthma Center is staffed by specialists trained in allergy, asthma, environmental health, and pulmonology. Our center is unique because we bring together world-class physicians from Emory University School of Medicine, Georgia Pediatric Pulmonology Associates PC and Morehouse School of Medicine.</p>
+
+										<h3>Leadership</h3>						
+
+										<div class="bio">
+											<div class="photo"><img src="img/personnel/MKG_Thomas-Burns.png" alt="Doctor Thomas Burns photo" class="img-circle"></div>
+											<p class="name">Thomas Burns, M.D. </p>
+											<p class="position">Pediatric Allergy/Immunology Specialist</p>
+											<p class="secondary"></p>
+										</div>
+
+										<div class="bio">
+											<div class="photo"><img src="img/personnel/MKG_BruceChien.png" alt="Doctor Bruce Chien photo" class="img-circle"></div>
+											<p class="name">Bruce Chien, M.D.</p>
+											<p class="position">Pediatric Pulmonologist</p>
+											<p class="secondary">Medical Director, Children's Asthma Center</p>
+										</div>
+
+										<div class="bio">
+											<div class="photo"><img src="img/personnel/KateSmith.jpg" alt="Doctor Lauren Middlebrooks photo" class="img-circle"></div>
+											<p class="name">Lauren Middlebrooks, M.D./PhD </p>
+											<p class="position">Pediatric Allergy/Immunology Specialist</p>
+											<p class="secondary"></p>
+										</div>
+
+										<!-- Secondary Professionals - 	KEEP, BUT COMMENT OUT FOR NOW. -->
+
+										<!-- <h3>Additional Staff</h3>
+
+										<ul class="additional clearfix">
+											<li>Respiratory Therapist<br/></li>
+											<li>Licensed Practical Nurse (L.P.N., R.N.)<br/></li>
+											<li>Social Worker<br/>
+												<span>
+													Helps families by assessing their needs and providing them with resources and support to deal with their child's illness.
+												</span>
+											</li>
+											<li>Program and Outreach Coordinator<br/>
+												<span>
+													Provides administrative and clinical support to the asthma team, especially for the high risk asthma program. Conducts outreach eduation to schools, child care centers, after school programs and other organizations. Participates in community groups to help improve outcomes of children in Georgia with asthma.
+												</span>
+											</li>
+										</ul> -->
+
+									</div>
+								</div> <!-- END panel-body -->
+
+							</div> <!-- END panelWrapper -->
+
+							<div class="relatedContent col-md-4">
+
+								<!-- Videos in Related Content -->
+								<a href="#" class="video">
+									<div class="video vid-image col-sm-6 col-md-12" id="vid-asthma1">
+										<div class="container videoContainer">
+											<div class="videoChild">
+												<img src="img/icons/video_play.png" class="img-responsive page-content" id="image-icon" alt="Play icon">
+												<p>Asthma FPO Content 4<p>
+											</div>
+										</div>
+										<div class="videoOverlay"></div>
+									</div>
+								</a>
+
+								<a href="#" class="video">
+									<div class="video vid-image col-sm-6 col-md-12" id="vid-asthma2">
+										<div class="container videoContainer">
+											<div class="videoChild">
+												<img src="img/icons/video_play.png" class="img-responsive page-content" id="image-icon" alt="Play icon">
+												<p>Asthma FPO Content 5</p>
+											</div>
+										</div>
+										<div class="videoOverlay"></div>
+									</div>
+								</a>
+
+								<a href="#" class="video">
+									<div class="video vid-image col-sm-6 col-md-12" id="vid-asthma3">
+										<div class="container videoContainer">
+											<div class="videoChild">
+												<img src="img/icons/video_play.png" class="img-responsive page-content" id="image-icon" alt="Play icon">
+												<p>Asthma FPO Content 6</p>
+											</div>
+										</div>
+										<div class="videoOverlay"></div>
+									</div>
+								</a>
+
+							</div> <!-- END relatedContent -->
+						</div>
+					</section>
+
+					<section id="manage">
+						<div class="panel panel-default clearfix">
+							<div class="panel-heading">
+								<h3 class="panel-title"><i class="fa fa-plus-circle"></i>Manage</h3>
+							</div>
+
+							<div class="panelWrapper col-md-8">
+
+								<div class="panel-body">
+									<div>
+										<h2>Asthma Control</h2>
+										<p class="intro">Kids with asthma can live active lives. Your child's doctor, school nurse, and family are the keys to controlling asthma symptoms.</p>
+
+										<ol class="plain">
+											<li>Make sure your child users controller medicine correctly every day.</li>
+											<li>Visit your child's doctor at least 4 times a year for asthma checkups.</li>
+											<li>Know what makes your child’s asthma worse and how to avoid it.</li>
+											<li>Quick relief (rescue) medications for use during asthma attacks.</li>
+											<li>Have an asthma action plan and help your child follow it.</li>
+											<li>Give your child's school and day care a copy of his asthma action plan and medicine schedule.</li>
+										</ul>
+
+									</div>
+								</div> <!-- END panel-body -->
+
+								<div class="panel-body">
+									<div>
+										<h2>Asthma Action Plan</h2>
+										<p class="intro">An asthma action plan is created by you and your child’s doctor. It includes:</p>
+
+										<ul class="plain">
+											<li>Your child's prescribed controller and quick-relief medications</li>
+											<li>What to do when your child is having an asthma attack</li>
+											<li>How to identify warning signs of an asthma attack</li>
+											<li>Your child's triggers</li>
+											<li>Emergency contact information</li>
+											<li>Guidelines for pre-treatment before activity</li>
+										</ul>
+
+									</div>
+								</div> <!-- END panel-body -->
+
+							</div> <!-- END panelWrapper -->
+
+							<div class="relatedContent col-md-4">
+
+								<!-- Videos in Related Content -->
+								<a href="#" class="video">
+									<div class="video vid-image col-sm-6 col-md-12" id="vid-asthma1">
+										<div class="container videoContainer">
+											<div class="videoChild">
+												<img src="img/icons/video_play.png" class="img-responsive page-content" id="image-icon" alt="Play icon">
+												<p>Asthma FPO Content 7<p>
+											</div>
+										</div>
+										<div class="videoOverlay"></div>
+									</div>
+								</a>
+
+								<a href="#" class="video">
+									<div class="video vid-image col-sm-6 col-md-12" id="vid-asthma2">
+										<div class="container videoContainer">
+											<div class="videoChild">
+												<img src="img/icons/video_play.png" class="img-responsive page-content" id="image-icon" alt="Play icon">
+												<p>Asthma FPO Content 8</p>
+											</div>
+										</div>
+										<div class="videoOverlay"></div>
+									</div>
+								</a>
+
+								<a href="#" class="video">
+									<div class="video vid-image col-sm-6 col-md-12" id="vid-asthma3">
+										<div class="container videoContainer">
+											<div class="videoChild">
+												<img src="img/icons/video_play.png" class="img-responsive page-content" id="image-icon" alt="Play icon">
+												<p>Asthma FPO Content 9</p>
+											</div>
+										</div>
+										<div class="videoOverlay"></div>
+									</div>
+								</a>
+							</div> <!-- END relatedContent-->
+						</div>
+					</section>
+
+					<section id="prevention">
+						<div class="panel panel-default clearfix">
+							<div class="panel-heading">
+								<h3 class="panel-title"><i class="fa fa-plus-circle"></i>Prevention</h3>
+							</div>
+
+							<div class="panelWrapper col-md-8">
+
+								<div class="panel-body">
+									<div>
+										<h2>Asthma Medications</h2>
+										<p class="intro">There are many different kinds of medications prescribed for children with asthma. Learn more about the most common types.</p>
+ 										<ul class="stand-alone">
+											<li>
+												<a href="#">Download the Asthma Medications PDF
+													<i class="fa fa-chevron-circle-right"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div> <!-- END panel-body -->
+
+								<div class="panel-body">
+									<div>
+										<h2>What Causes Asthma?</h2>
+										<p class="intro">Asthma attacks are caused when the airways in the lungs are bothered by an asthma trigger. Each child's triggers are different.</p>
+
+										<p class="intro">Ask for a written asthma plan from your child's doctor to learn how to control asthma and avoid triggers.</p>
+									</div>
+								</div> <!-- END panel-body -->
+
+							</div> <!-- END panelWrapper -->
+
+							<div class="relatedContent col-md-4">
+
+								<!-- Videos in Related Content -->
+								<a href="#" class="video">
+									<div class="video vid-image col-sm-6 col-md-12" id="vid-asthma1">
+										<div class="container videoContainer">
+											<div class="videoChild">
+												<img src="img/icons/video_play.png" class="img-responsive page-content" id="image-icon" alt="Play icon">
+												<p>Asthma FPO Content 10<p>
+											</div>
+										</div>
+										<div class="videoOverlay"></div>
+									</div>
+								</a>
+
+								<a href="#" class="video">
+									<div class="video vid-image col-sm-6 col-md-12" id="vid-asthma2">
+										<div class="container videoContainer">
+											<div class="videoChild">
+												<img src="img/icons/video_play.png" class="img-responsive page-content" id="image-icon" alt="Play icon">
+												<p>Asthma FPO Content 11</p>
+											</div>
+										</div>
+										<div class="videoOverlay"></div>
+									</div>
+								</a>
+
+								<a href="#" class="video">
+									<div class="video vid-image col-sm-6 col-md-12" id="vid-asthma3">
+										<div class="container videoContainer">
+											<div class="videoChild">
+												<img src="img/icons/video_play.png" class="img-responsive page-content" id="image-icon" alt="Play icon">
+												<p>Asthma FPO Content 12</p>
+											</div>
+										</div>
+										<div class="videoOverlay"></div>
+									</div>
+								</a>
+							</div> <!-- END relatedContent -->
+
+						</div>
+					</section>
+
+				</div> <!-- END panels -->
+
+				<!--Floating Page Nav -->
+
+				<div class="side-nav-container col-md-2 scrollspy" role="complementary">
+					<!-- repeat "col-md-2" here so it degrades more gracefully. -->
+					<ul id="page-nav" class="nav col-md-2 hidden-xs hidden-sm" data-spy="affix"> 
+
+						<!-- Page Navigation -->
+						<li class="page-navigation">
+							<a class="sub-head">Page Navigation</a>
+							<ul class="nav">
+								<li>
+									<a href="#diagnose">Diagnose</a>
+								</li>
+								<li>
+									<a href="#take-action">Take Action</a>
+								</li>
+								<li>
+									<a href="#manage">Manage</a>
+								</li>
+								<li>
+									<a href="#prevention">Prevention</a>
+								</li>
+							</ul> <!--end of sub navigation -->
+						</li>    
+
+						<li class="related-topics"> <!-- Related Topics -->
+							<a class="sub-head">Related Topics</a>
+							<ul class="nav">
+								<li>
+									<a href="#">Cystic Fibrosis
+										<i class="fa fa-chevron-circle-right"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">Pulmonary
+										<i class="fa fa-chevron-circle-right"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">Allergies
+										<i class="fa fa-chevron-circle-right"></i>
+									</a>
+								</li>
+							</ul> <!--end of sub navigation -->
+						</li> 
+
+						<!-- KEEP THIS OUT UNTIL IT'S FINALIZED AND IN THE SPRINT. May end up being redesigned. -->
+
+						<!-- <li class="featured-location"> --> <!-- Related Topics -->
+							<!-- <a class="sub-head featured" style="display: block;">Featured Location</a>
+							<ul class="nav">
+								<li>
+									<div class="location-map"> --> <!-- Google map thumbnail -->
+										<!-- <a href="#" alt="Location Map.">
+											<img src="img/map-thumb-palceholder.png" class="img-responsive">
+										</a>
+
+										<ul class="location-info">
+											<li>
+												<p class="location-title name">Hughes Spalding</p>
+
+												<div class="location-address">
+													<p>35 Jesse Hill Jr. Drive SE</p>
+													<p>Atlanta, GA 30303-3032</p>
+												</div>
+
+												<p class="location-title hours">Hours</p>
+
+												<div class="location-hours">
+													<p>Mon: 8:00am - 12:00pm</p>
+													<p>Tue: 1:00pm – 5:00pm</p>
+													<p>Wed: 8:00am – 12:00pm</p>
+													<p>Thu: 8:00am – 12:00pm</p>
+													<p>& 1:00pm – 5:00pm</p>
+												</div>
+											</li> -->
+										<!-- </ul> -->	<!-- END location-info -->
+
+									<!-- </div> --> <!-- END location-map -->
+								<!-- </li> -->
+							<!-- </ul> --><!--end of sub navigation-->
+						<!-- </li> --> 
+
+						<!-- <li class="other-links">  --><!-- Related Topics -->
+							<!-- <ul class="nav">
+								<li>
+									<a href="#">Get Directions</a>
+								</li>
+								<li>
+									<a href="#">See Other Locations</a>
+								</li>
+							</ul> --><!--end of sub navigation-->
+						<!-- </li>  -->
+
+
+					</ul> <!-- end of main navigation-->
+				</div> <!-- side-nav-container -->
+
+			</div> <!-- END row -->
+
+			<!-- don't leave this here. -->
+			<!-- <p class="jQWinHeightWidth">
+				<strong>Browser dimensions:</strong>
+				<span id="jqWidth">812</span>px X <span id="jqHeight">665</span>
+			</p> -->
+
+		</div> <!-- END constrain-width -->
+
+		<footer class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="container">
+
+				<div class="row">
+					<ul class="row-social clearfix">
+						<li><a href="#"><img src="img/social/blog.png" alt="Blog icon"></a></li>
+						<li><a href="#"><img src="img/social/facebook.png" alt="Facebook icon"></a></li>
+						<li><a href="#"><img src="img/social/twitter.png" alt="Twitter icon"></a></li>
+						<li><a href="#"><img src="img/social/instagram.png" alt="Instagram icon"></a></li>
+						<li><a href="#"><img src="img/social/youtube.png" alt="You Tube icon"></a></li>
+						<li><a href="#"><img src="img/social/pinterest.png" alt="Pinterest icon"></a></li>
+						<li><a href="#"><img src="img/social/linkedin.png" alt="LinkedIn icon"></a></li>
+
+						<li class="divider"></li>
+
+						<li><a href="#"><img src="img/social/email.png" alt="Email icon"></a></li>
+						<li><a href="#"><img src="img/social/phone.png" alt="Phone icon"></a></li>
+					</ul>
+				</div> <!-- END ROW -->
+
+				<div class="row">
+					<ul class="row-middle">
+						<li class="clearfix">
+							<ul class="column-one col-xs-12 col-sm-4 col-md-3">
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Contact Us</a></li>
+								<li><a href="#">Careers</a></li>
+								<li><a href="#">Newsroom</a></li>
+							</ul>
+							<ul class="column-two col-xs-12 col-sm-4 col-md-3">
+								<li><a href="#">Medical Services</a></li>
+								<li><a href="#">Patients</a></li>
+								<li><a href="#">Visitors</a></li>
+								<li><a href="#">Donors & Volunteers</a></li>
+								<li><a href="#">Medical Professionals</a></li>
+							</ul>
+							<ul class="column-three col-xs-12 col-sm-4 col-md-3">
+								<li><a href="#">Find a Doctor</a></li>
+								<li><a href="#">Find a Location</a></li>
+								<li><a href="#">Make an Appointment</a></li>
+								<li><a href="#">Make a Referral</a></li>
+								<li><a href="#">MYchart</a></li>
+							</ul>
+							<ul class="column-four col-xs-12 col-md-3">
+								<li><a href="#"><img src="img/usNewsbadge.png" alt="U.S.News & World Report Best Children's Hospitals award" class="img-responsive hidden-xs"></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div> <!-- END ROW -->
+
+				<div class="row">
+					<ul class="row-copyright clearfix">
+						<li><a href="#">Terms of Use</a></li>
+
+						<li class="divider"></li>
+
+						<li><a href="#">Patient Privacy</a></li>
+						<li class="copyright">&#169;2015 Children's Healthcare of Atlanta Inc. All Rights Reserved.</li>
+					</ul>
+				</div> <!-- END ROW -->
+
+			</div> <!-- END container -->
+		</footer>
+	</div> <!-- container-fluid -->
+
+	<!-- /container -->
+	<!-- Bootstrap core JavaScript-->
+	<script src="components/jquery/dist/jquery.js"></script>
+	<script src="components/jquery/dist/jquery.placeholder.js"></script>
+	<script src="components/jquery/dist/jquery.placeholder.min.js"></script>
+	<script src="js/choa.js"></script>
+	<script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="components/bootstrap/js/bootstrap-tabcollapse.js"></script>
+	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css"></script>
+	<script src="js/ekko-lightbox.min.js"></script>
+
+	<!-- OTHER Lightbox TEST -->
+	<script src="js/bootstrap.youtubepopup.min.js"></script>
+
+	<script>
+		$(function() {
+			window.prettyPrint && prettyPrint()
+			$(document).on('click', '.yamm .dropdown-menu', function(e) {
+				e.stopPropagation()
+			});
+
+			$('.navbar-header button').on('click', function(){
+				var $i = $(this).parent().find('.fa');
+				if($i.hasClass('fa-bars')){
+					$i.removeClass('fa-bars').addClass('fa-times');
+				} else {
+					$i.removeClass('fa-times').addClass('fa-bars');
+				}
+			});
+
+			//Floating page nav
+			$('#page-nav').affix({
+				offset: {
+					top: $('#page-nav').offset().top,
+					bottom: function () {
+						return (this.bottom = $('footer').outerHeight(true)) + 200	//tweak this number?...
+					}
+				}
+			});
+
+		})	//END function
+	</script>
+
+		<!-- tweet and share :)-->
+	<script>
+		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+	</script>
+
+</body>
+</html>

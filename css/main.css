@@ -1,0 +1,1881 @@
+/* _____________________________________________________________________ */
+/* ____________________________ Main Styles ____________________________ */
+/* _____________________________________________________________________ */
+
+
+
+/* ____________________________ Bootstrap v.3x _________________________ */
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+/* @media (min-width: 768px) { ... } */
+
+/* Medium devices (desktops, 992px and up) */
+/* @media (min-width: 992px) { ... } */
+
+/* Large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) { ... } */
+
+/* WE USE ---LARGE DEVICES--- AND ---SMALL DEVICES--- */
+
+
+
+/* _________________ Global Layout _________________ */
+
+body {
+	padding: 0px; 
+	color: #666;
+	font-family: Arial, Helvetica, sans-serif;
+	/* For floating Page Nav - do I need this? */
+	position: relative;
+}
+
+/*Bootstrap Container*/
+.container-fluid {
+	padding: 0;
+}
+
+.container {width: auto;}
+
+/* Fix page content @ no bigger than 1400px */
+@media (min-width: 1400px){
+	.constrain-width {
+		width: 1400px;
+		margin: 0 auto;
+	}
+}
+
+/* Put Bootstrap container padding BACK for mobile */
+@media (max-width: 768px){
+	.constrain-width {
+		padding: 0 15px;
+	}
+}
+
+/*Bootstrap Row*/
+.row {
+	margin: 0;
+	padding: 0;
+}
+
+.row.homeIntroText {
+	padding: 0 2%;
+}
+
+/* Grid demo styles */
+.grid-demo {
+	padding: 10px 30px;
+}
+
+.grid-demo [class*="col-"] {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 1em;
+	text-align: center;
+	line-height: 2;
+	background-color: #e5e1ea;
+	border: 1px solid #d1d1d1;
+}
+
+/* Clearfix - use on PARENT of element */
+	.clearfix:after {
+	content: "";
+	display: table; 
+	clear: both;
+}
+
+/* _________________ global type _________________ */
+
+
+h1, h2, h3 {
+	/* font-family: "Gotham Rounded", Arial, Helvetica, sans-serif; */
+	font-family: "Nunito", Arial, Helvetica, sans-serif;
+}
+
+p {
+}
+
+pre { margin: 0; padding: 10px 20px !important;}
+
+/* Style Glyph */
+.inner-addon .glyphicon {
+	position: absolute;
+	padding: 7px;
+	pointer-events: none;
+}
+
+/* Align Glyph */
+.left-addon .glyphicon  {left:  0px;}
+.right-addon .glyphicon {right: 0px;}
+
+/* _________________ Top Navigation _________________ */
+
+/* ____ Yamm!3 - Yet another megamenu for Bootstrap 3
+http://geedmo.github.com/yamm3 @geedmo - Licensed under the MIT license ____ */
+
+.yamm .nav,
+.yamm .collapse,
+.yamm .dropup,
+.yamm .dropdown {
+	position: static;  
+}
+
+.yamm .container {
+	position: relative;
+}
+
+.yamm .dropdown-menu {
+	left: auto;
+}
+
+.yamm .yamm-content {
+	padding: 0px 0px;
+}
+
+.yamm .dropdown.yamm-fw .dropdown-menu {
+	left: 0;
+	right: 0;
+}
+
+.yamm .nav, .yamm .collapse, .yamm .dropup, .yamm .dropdown {
+	padding: 0;
+}
+
+/* Custom container */
+.navbar .container-full {
+	width: 100% !important;
+}
+
+.navbar {
+	margin-bottom: 8px;
+}
+
+.navbar-bg-col {
+	background-color: #01993f;
+	border-color: #E7E7E7;
+}
+
+.nav>li>a {
+	color: #ffffff;
+}
+
+.nav-col>li>a {
+	color: #000000;
+}
+
+/* Center nav */
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.center.navbar .nav,
+.center.navbar .nav > li {
+	float:none;
+	display:inline-block;
+	/* ie7 fix */
+	*display:inline;
+	/* hasLayout ie7 trigger */
+	*zoom:1;
+	vertical-align: top;
+}
+
+.center.navbar-inner {
+	text-align:center;
+}
+
+.center .dropdown-menu {
+	text-align: left;
+}
+
+.navbar-inner {
+	margin: 0 auto;
+}
+
+/* Menu Styes */
+.list-unstyled,
+.list-unstyled ul { 
+	padding-left: 32px;
+	color: grey;
+	min-width: 120px 
+}
+
+/*Overwrite Bootstrap*/
+.navbar-default {
+	background: transparent !important;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+/* Get rid of mobile hamburders background. */
+@media (max-width: 767px) {
+	.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+		background-color: transparent;
+	}
+}
+
+/* Search bar*/
+/* enable absolute positioning */
+.inner-addon {
+	position: relative;
+}
+
+/* add padding  */
+.left-addon input  {padding-left:  30px;}
+.right-addon input {padding-right: 20px;}
+
+.search-bar {
+	background-color: #BAD6BA;
+} 
+
+#subnav-1 .glyphicon{
+	margin-right: 5px;
+}
+
+.nav .navbar-nav {
+	width: 80%;
+	float: none;
+	margin: 0 auto; 
+}
+
+#primary-nav.navbar-nav li.dropdown {
+	border-right: #66c59b;
+	border-right-style: solid;
+	border-width: thin;
+	min-height: 54px;
+}
+
+#primary-nav.navbar-nav li.hidden-xs {
+	border: none;
+	padding: 9px 0 0 0;
+	max-width: 120px;
+}
+
+.nav.navbar-nav {
+	max-width: 880px;
+	min-height: 34px;
+	position: relative;
+	display: block;
+	float: none;
+	padding: 0 0;
+	margin: 0 auto;
+}
+
+#subnav-1.nav.navbar-nav {
+	max-width: 661px;
+	min-height: 38px;
+	width: 70%;
+	position: relative;
+	display: block;
+	float: none;
+	padding: 8px 0 0;
+	margin: 0 auto;
+}
+
+.navbar-nav  li:nth-child(5) {
+	margin-right: 10px;
+}
+
+.fa-plus {
+	display: none;
+}
+
+.nav.navbar-nav li a {
+	color: #908f8f;
+}
+
+.nav.navbar-nav li a:hover {
+	color: #777;
+}
+
+/*sub-nav text color*/
+#primary-nav li.dropdown ul.dropdown-menu li a {
+	color: #777;
+}
+
+/* Seconday nav */
+@media (min-width: 768px) {
+	div#navbar div.container.navbar-bg-col-1 {
+		background: #dadbdc;
+	}
+}
+
+/* Height breaks mobile menu drop-down. Put in media query. */
+@media (min-width: 768px) {
+	.navbar-bg-col-1 {
+		border-color: #000000;
+		height: 38px;
+		background-color: transparent;
+	}
+}
+
+/* Rename these! Nav images. Get rid of "image" names. Put in media query? */
+/* logo - desktop*/
+#image, #desktop-logo {
+	margin-top: -27px;
+	margin: 0 auto 10px auto;
+}
+
+/*Logo - mobile*/
+#image2 {
+	height: 55px;
+	margin-top: 0px;
+}
+
+/*Search - mobile*/
+#image3 {
+	height: 24px;
+	width: 24px;
+	float: right;
+	margin-top: -38px;
+	margin-right: 13px;
+}
+
+/* Nav Type - Main */
+#primary-nav.navbar-nav > li > a {
+	font-family: "Nunito", Arial, Helvetica, sans-serif;
+	/*Overwrite Bootstrap*/
+	text-shadow: none;
+}
+.navbar-brand, .navbar-nav > li > a {
+	/*Overwrite Bootstrap*/
+	text-shadow: none;
+}
+
+/* Nav queries*/
+
+@media (max-width: 1200px) {
+	.nav.navbar-nav { width: 100% }
+	.right-addon input { padding-right: 0px;margin-right: -38px;}
+}
+
+@media (max-width: 1050px) {
+	#primary-nav.navbar-nav li { padding-left: 7px; padding-right: 7px;}
+	#subnav-1.nav.navbar-nav {width: 86%;}
+	.nav.navbar-nav li a { 
+		font-size: 15px;
+	}
+	.right-addon input { padding-right: 0px;margin-right: -42px;}
+}
+
+@media (max-width: 1005px){
+	#primary-nav.navbar-nav li { padding-left: 2px; padding-right: 2px;}
+	#subnav-1.nav.navbar-nav {width: 90%;}
+}
+
+@media (max-width: 974px){
+	#primary-nav.navbar-nav li { padding-left: -1px; padding-right: -1px;}
+	.right-addon input {padding-right: 0px; margin-right: -50px;}
+	#subnav-1.nav.navbar-nav {width: 94%;}
+}
+
+@media (max-width: 940px){
+	.right-addon input {padding-right: 0px; margin-right: -60px;}
+	#primary-nav.navbar-nav li { padding-left: 5px; padding-right: 5px;}
+}
+
+@media (max-width: 839px){
+	.right-addon input {padding-right: 0px; margin-right: -70px;}
+	#primary-nav.navbar-nav>li>a { font-size: 13px; }
+	#subnav-1.nav.navbar-nav {width: 100%;}
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+	#image2 {margin: 0 auto; margin-top: 11px;}
+	/*what's this for?*/
+	/* .page-content { font-size: 1.2em;} */
+	.list-unstyled li>a {color: #777;}
+}
+
+@media (max-width: 479px) {
+	#image2 {margin: 0 auto; margin-top: 11px;}
+	.fa-plus {
+		display: inline-block;
+	}
+	.nav.navbar-nav {
+		width: 100%;
+	}
+	#primary-nav.nav.navbar-nav li a {
+		font-size: 15px;
+		height: 45px;
+	}
+}
+
+@media (min-width: 767px){
+	#primary-nav.navbar-nav>li {
+		padding: 0px;
+	}
+	#primary-nav.navbar-nav>li>a {
+		padding: 17px 9px;
+	}
+}
+
+/* bootstrap overwrites */
+
+div#navbar .navbar-bg-col {
+	min-height: 54px;
+}
+
+.form-control {
+	height: 28px;
+	margin-top: 4px;
+}
+
+/* _________________ Hero _________________ */
+
+/* vertical centering of content */
+.jumboContainer {
+	display: table;
+	height: 500px;
+}
+
+@media(max-width: 767px){
+	.jumboContainer {
+		height: 300px;
+	}
+}
+
+.jumboChild {
+	display: table-cell;
+	height: 100%;
+	vertical-align: middle;
+}
+
+/* carousel title */
+.jumbotron .container h1 {
+	text-align: center;
+}
+
+.jumbotron .container {
+	text-align: center;
+	width: 45% !important;
+}
+
+@media(max-width: 1400px){
+	.jumbotron .container {
+		width: 60% !important;
+	}
+}
+
+@media(max-width: 992px){
+	.jumbotron .container {
+		width: 75% !important;
+	}
+}
+
+@media(max-width: 767px){
+	.jumbotron .container {
+		width: 100% !important;
+	}
+}
+
+.jumbotron h1 {
+	color: #fff;
+	margin: 0;
+	position: relative;
+	z-index: 9;
+}
+
+.jumbotron p {
+	color: #fff;
+	position: relative;
+	z-index: 9;
+}
+
+/* Hero headers for various devices */
+@media(max-width: 767px){
+	.jumbotron h1 {
+		font-size: 40px;
+		line-height: 49px;
+	}
+}
+
+@media(max-width: 400px){
+	.jumbotron h1 {
+		font-size: 40px;
+		line-height: 49px;
+	}
+}
+
+.jumbotron {
+	margin: 0 0px 11px;
+	padding: 0;
+	height: 500px;
+    margin-bottom: inherit;
+}
+
+.jumbotron.intro {
+	margin-top: 0;
+}
+
+.jumbotron .navbar {
+	font-size: 11px;
+	line-height: 1.6;
+}
+
+/*Overwite bootstrap*/
+.container .jumbotron, .container-fluid .jumbotron {
+	border-radius: 0;
+}
+
+/*Mobile Nav Title*/
+#pageNavTitleMobile {
+	display: none;
+}
+
+/* Jumbotron Hero icon. */
+#image-icon {
+	margin: 0 auto;
+	position: relative;
+	z-index: 9;
+}
+
+.page-content{
+	text-align: center;
+	/*what's this for?*/
+	/*  font-size: 2em; */
+	padding: 10px;
+}
+
+/*Hero/Carousel image(s)*/
+/*Wait until the carousel is implimented to fix this. "Cover" is right property. works better when images are correct proportion - this is % sized to be cropped. problem when small*/
+#header {
+	background: url("../img/heroes/bunny.jpg") no-repeat center 34%;
+	background-size: 100%;
+	background-size: cover;
+}
+
+/*The second one is for when the copy disappears from hero and goes into content section.*/
+p.page-content.openingStatement {
+	color: #646464;
+	max-width: 844px;
+	margin: 32px auto;
+	font-size: 24px;
+	line-height: 36px;
+}
+
+@media(max-width: 767px){
+
+	p.page-content.openingStatement {
+		font-size: 20px;
+		line-height: 32px;
+		margin: 18px auto 6px;
+	}
+}
+
+@media(max-width: 400px){
+	p.page-content.openingStatement {
+		font-size: 18px;
+		line-height: 28px;
+		margin: 18px auto 6px;
+	}
+}
+
+/* Jumbotron Overlay styles */
+.container-fluid .jumbotron {
+	padding: 0;
+}
+
+.jumbotronOverlay {
+	background-color: #000;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	top: -100%;
+	opacity: .3;
+}
+
+/* _________________ Breadcrumbs _________________ */
+
+div.bread-container {
+	border-top: solid 1px #d0d0d0;
+}
+
+/*change some positioning for mobile menus.*/
+@media (max-width: 767px){
+	div.bread-container {
+		border-top: transparent;
+		margin-bottom: 0;
+	}
+	/* "Sectional" and "inside" pages have breadcrumbs. */
+	.navbar {
+		margin-bottom: 0;
+	}
+	/*home page has no breadcrumbs*/
+	.home .navbar {
+		margin-bottom: 0;
+	}
+}
+
+ul.breadcrumbs {
+	margin: 0 auto;
+	height: 22px;
+	list-style-type: none;
+	padding: 0;
+}
+
+ul.breadcrumbs li {
+	float: left;
+	background: url("../img/bullet-carrot.png") no-repeat right center;
+	padding: 0 12px 2px 6px;
+}
+
+@media(max-width: 767px){
+	ul.breadcrumbs li {
+		padding: 12px 12px 12px 6px;
+	}
+}
+
+ul.breadcrumbs li:last-child {
+	background: none;
+}
+
+ul.breadcrumbs li a {
+	color: #646464;
+	font-family: "Nunito", Arial, Helvetica, sans-serif;
+}
+
+ul.breadcrumbs li a.selected {
+	color: #139f58;
+}
+
+ul.breadcrumbs li a.selected:hover, ul.breadcrumbs li a.selected:active {
+	text-decoration: none;
+	cursor: default;
+}
+
+/* _________________ Content Section _________________ */
+
+/*content sections to keep info together*/
+section {
+	float: left;
+	width: 98%;
+	border-bottom: solid 1px #b1b1b1;
+	margin-bottom: 40px;
+}
+
+section:first-child {
+	margin-top: 34px;
+}
+
+section:last-child {
+	border-bottom: solid 1px transparent;
+	margin-bottom: 0;
+}
+
+@media (max-width: 767px){
+	section {
+		width: inherit;
+		border-bottom: solid 1px transparent;
+		float: none;
+		margin-bottom: 0;
+	}
+	section:first-child {
+		margin-top: 14px;
+	}
+}
+
+/* hide "+" icons for desktop*/
+#content-panels .panel-heading i.fa {
+	display: none;
+}
+
+@media (max-width: 767px){
+	.jumbotron { 
+		/*added 5/18 to limit height on mobile - which was too much.*/
+		height: 300px;
+	}
+	.navbar-collapse .container{
+		padding: 0 20px;
+	} 
+	.navbar-bg-col .dropdown-toggle, 
+	.navbar-bg-col-1,
+	.navbar-bg-col-1 .nav.navbar-nav li a {
+		padding-left: 0;
+		padding-right:0; 
+	}
+	#primary-nav.navbar-nav li {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.navbar-nav li:nth-child(5){
+		margin:0;
+	}
+	#primary-nav a.dropdown-toggle{ 
+		position: relative;
+		padding: 15px 0 15px 15px;
+		border-bottom: solid 1px #eee;
+	}
+	.dropdown-toggle:before { 
+		position: absolute;
+		left: 0;
+		top: 14px;
+		content:"+";
+		font-size: 16px;
+		font-weight: bold;
+	}
+	#primary-nav  .open a.dropdown-toggle{
+		background: none;
+		box-shadow:none;
+		-webkit-box-shadow:none;
+	}
+	.open .dropdown-toggle:before { 
+		content: "_";
+		top: 6px;
+	}
+	#subnav-1.nav.navbar-nav {
+		width:100%;
+		padding: 20px 0;
+	}
+	#primary-nav.navbar-nav li.dropdown {
+		border-right-style: none;
+	}
+	#content-panels .panel-default {
+		box-shadow: none;
+		border-radius: 0;
+		border-color: transparent;
+	}
+	/*Reconfig padding & margin for Info mobile pages - has no wrapper. */
+	.info #content-panels {
+			padding: 0;
+	}
+	#content-panels .panel-default .panel-heading {
+		background-image: none;
+		background: #ccc;
+		border-radius: 0;
+		color: #fff;
+	}
+	#content-panels .panel {
+		margin: 0 auto 6px auto;
+	}
+	/* Hide panels @ 767px for mobile nav. */
+	#content-panels .panel-body {
+		display: none;
+	}
+	/*Show it on mobile Info pages.*/
+	.info #content-panels .panel-body {
+		display: block;
+		padding: 0;
+		margin: 0;
+	}
+	#content-panels .panel .panel-heading.active {
+		background: #01993f;
+	}
+	#content-panels .panel-heading i.fa {
+		display: inline-block;
+		float: right;
+		color: #fff;
+	}
+}
+
+@media (min-width: 767px) {
+	.panel-group {width: 400px;}
+	.thumbnail {margin: 0; }
+	#primary-nav.navbar-nav>li>a { 
+		color: #fff;
+		font-size: 15px;
+	}  
+}
+
+@media ( max-width: 767px ) {
+	.navbar-toggle {
+		position: absolute;
+		left: 8px;
+		margin-top: 17px;
+	}
+	.navbar-nav>li>a {
+		color: #777;
+		font-size: 13px;
+	}
+}
+
+/*Font override*/
+.fa-remove:before, .fa-close:before, .fa-times:before {
+	content: "\00d7";
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#subnav-1 >li>a {
+	padding: 3px;
+	margin-left: 10px;
+}
+
+/* Asthma/Content Template css page. This has to be "Globalized". Class every page @ body tag and tell what goes here that way */
+.asthma #hero-image {
+	background: url("../img/heroes/Prince.jpg") no-repeat center 34%;
+	background-size: cover;
+}
+
+.asthma_learn-more #hero-image {
+	/*background: url("../img/heroes/AsthmaInChildren-1.jpg") no-repeat center 34%;*/
+	background: url("../img/heroes/kiss.jpg") no-repeat center 34%;
+	background-size: cover;
+}
+
+.navbar-header button.navbar-toggle {
+	border: none;
+	color: #aaa;
+}
+
+.navbar-header button.navbar-toggle .fa-bars {
+	font-size: 17pt;
+	line-height: 1.1;
+}
+
+.navbar-header button.navbar-toggle .fa-times {
+	font-size: 20pt;
+	color: #aaa;
+	line-height: 0;  
+}
+
+@media(max-width:  765px){
+	.navbar .navbar-collapse.collapse.in, .navbar .navbar-collapse.collapse {
+		padding: 0px 15px;
+	}
+}
+
+/* _________________ Content Panels _________________ */
+
+/*Wraps main panel, so secondary content ("relatedContent") can float to top*/
+.panelWrapper {
+}
+
+/*Reconfig padding & margin for Info mobile pages - has no wrapper. */
+@media (max-width: 767px){
+	.info .panelWrapper {
+		padding: 0;
+		margin: 0;
+	}
+}
+
+.panel {
+	background-color: transparent;
+}
+
+.panel-body {
+	padding: 0;
+	margin: 10px 0 30px 25px;
+}
+
+.panel-title {
+	font-size: 36px;
+	line-height: 24px;
+	margin: 0 0 0 54px;
+	color: #5d5d5e;
+}
+
+.panel-title.first {
+	margin-top: 0;
+}
+
+/*Panel Body Content*/
+.panel-body h2 {
+	font-size: 18px;
+	line-height: 24px;
+	background-color: #139f58;
+	color: #fff;
+	padding: 10px 10px 10px 32px;
+	margin: 0 0 20px 0;
+}
+
+.panel-body h3 {
+	margin: 20px 0 0 28px;
+	padding: 10px 0 10px 0;
+	border-top: solid 1px #b1b1b1;
+	border-bottom: solid 1px #b1b1b1;
+	clear: both;
+}
+
+.panel-body p.intro {
+	margin: 0 0 20px 28px;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+/*Personnel Bios*/
+/*make elements responsive.*/
+.panel-body .bio {
+	width: 212px;
+	min-height: 212px;
+	float: left;
+	margin: 20px 16px 20px 0;
+}
+
+.panel-body .bio:first-of-type {
+}
+
+.panel-body .bio:last-of-type {
+}
+
+.panel-body .bio .photo {
+	height: 112px;
+	width: 112px;
+	margin: 0 auto 12px auto;
+}
+
+.panel-body .bio p.name {
+	font-family: "Nunito", Arial, Helvetica, sans-serif;
+	color: #006cb9;
+	font-size: 16px;
+	line-height: 18px;
+	text-align: center;
+	margin: 0;
+}
+
+.panel-body .bio p.position {
+	color: #646464;
+	font-size: 14px;
+	line-height: 16px;
+	text-align: center;
+	margin: 0;
+}
+
+.panel-body .bio p.secondary {
+	color: #646464;
+	font-size: 15px;
+	line-height: 15px;
+	font-style: italic;
+	text-align: center;
+	margin: 0;
+}
+
+/*find js that does this - fix. get rid of display block. or, remove the js? */
+@media (min-width: 767px){
+	#content-panels .panel-body{
+		display: block !important; 
+	}
+}
+
+.panel {
+	box-shadow: none;
+	border-radius: 0;
+	/* Overwrite Bootstrap. */
+	margin-bottom: 0;
+}
+
+.panel-default {
+	border-color: transparent;
+}
+
+.panel-default > .panel-heading {
+	background-image: none;
+	background-repeat: none;
+	background-color: transparent;
+	border-color: transparent;
+	/*Overwrite old IE*/
+	filter: progid:DXimageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);
+}
+
+#content-panels.col-md-10, #content-panels.col-md-6, #content-panels.col-md-4 {
+	padding: 0;
+}
+
+/* Content ordered lists steps and links. */
+#content-panels .panel-body ol {
+	margin: 26px 0 0 4px;
+}
+
+#content-panels .panel-body ol:last-child {
+	margin: 26px 0 24px 4px;
+}
+
+#content-panels .panel-body ol li {
+	font-family: "Nunito", Arial, Helvetica, sans-serif;
+	margin: 0 0 36px 0;
+}
+
+#content-panels .panel-body ol li:last-child {
+	margin: 0 0 0 0;
+}
+
+#content-panels .panel-body ol li a {
+	font-size: 18px;
+	color: #8ac869;
+}
+
+/* Unordered lists within. */
+#content-panels .panel-body ol ul {
+	list-style-type: none;
+	padding: 10px 0 0 0;
+}
+
+/* Link glyph size styling. */
+#content-panels .panel-body i.fa.fa-chevron-circle-right {
+	font-size: 18px;
+	padding-left: 6px;
+	position: relative;
+	top: 0;
+}
+
+/* Aditional List styles. */
+#content-panels .panel-body div ul.additional {
+	margin: 20px 0 0 0;
+}
+
+#content-panels .panel-body div ul.additional li {
+	font-family: "Nunito", Arial, Helvetica, sans-serif;
+	margin: 0 0 8px 0;
+	clear: both;
+}
+
+#content-panels .panel-body div ul.additional span {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 4px 0 2px 12px;
+	clear: both;
+	float: left;
+}
+
+/* Plain List styles */
+#content-panels .panel-body div ul.plain {
+	margin: 8px 0 30px 20px;
+}
+
+#content-panels .panel-body div ul.plain li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	margin: 0 0 8px 0;
+	clear: both;
+}
+
+#content-panels .panel-body div ul.plain li a {
+}
+
+/* Plain Ordered List styles. */
+#content-panels .panel-body div ol.plain {
+	margin: 8px 0 30px 20px;
+}
+
+#content-panels .panel-body div ol.plain li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	margin: 0 0 8px 0;
+	clear: both;
+}
+
+#content-panels .panel-body div ol.plain li a {
+}
+
+/* Plan List link styles */
+#content-panels .panel-body div ul.stand-alone {
+	list-style-type: none;
+	margin: 40px 0 0 -12px;
+}
+
+#content-panels .panel-body div ul.stand-alone:last-child {
+	margin: 40px 0 26px -12px;
+}
+
+#content-panels .panel-body div ul.stand-alone li {
+	font-family: "Nunito", Arial, Helvetica, sans-serif;
+	margin: 0 0 0 0;
+}
+
+#content-panels .panel-body div ul.stand-alone li a {
+	font-size: 16px;
+	color: #8ac869;
+}
+
+#content-panels .panel-body div ul.stand-alone i.fa.fa-chevron-circle-right {
+	font-size: 18px;
+	padding-left: 6px;
+	position: relative;
+	top: 2px;
+}
+
+/* _________________ Page Carousels _________________ */
+
+.page-carousel {
+	margin: 0 auto;
+}
+
+/* _________________  Related Links _________________ */
+
+.relatedContent {
+	margin: 10px 0 31px 0;
+}
+
+@media (max-width: 990px){
+	.relatedContent {
+		margin: 30px 0 0 50px;
+	}
+}
+
+/* Hide secondary content @ mobile, so tapping on bars will show primary AND secondary content*/
+@media (max-width: 767px){
+	.relatedContent {
+		display: none;
+		margin: 0 auto;
+	}
+	/*Show for mobile Info pages. */
+	.info .relatedContent {
+		display: block;
+	}
+}
+
+/* Videos */
+
+/* Video positioning*/
+div.video {
+	margin: 0 0 20px 0;
+	/*border: solid 1px black;*/
+	position: relative;
+	z-index: 0;
+}
+
+@media (max-width: 992px){
+	div.video {
+		margin: 0 0 20px 20px;
+	}
+}
+
+@media (max-width: 480px){
+	div.video {
+		margin: 0 0 20px 0;
+	}
+}
+
+/* _________________ Related Content video stills _________________ */
+
+/*figure out how this can be dynamic. */
+/* 16:9  356x200 images. */
+
+.vid-image {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 0;
+	/*border: solid 1px #000;*/
+}
+
+/* Image sources */
+#vid-asthma1 {
+	background-image: url("../videos/comps/related-content_placeholder.jpg");
+}
+
+#vid-asthma2 {
+	background-image: url("../videos/comps/newly-diagnosed.jpg");
+}
+
+#vid-asthma3 {
+	background-image: url("../videos/comps/emergency-attack-card.jpg");
+}
+
+.videoChild {
+	display: table-cell;
+	height: 100%;
+	vertical-align: middle;
+	position: relative;
+	z-index: 9;
+}
+
+.videoChild:hover {
+	opacity: .75;
+}
+
+/* carousel title */
+.videoContainer h1 {
+	text-align: center;
+}
+
+/* vertical centering of content */
+.videoContainer {
+	text-align: center;
+	display: table;
+	height: 200px;
+	width: 65%;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+@media(max-width: 1400px){
+	.videoContainer {
+		width: 90% ;
+		height: 200px;
+	}
+	/* Different height for Info page. */
+	.info .videoContainer {
+		width: 90% ;
+		height: 232px;
+	}
+}
+
+@media(max-width: 992px){
+	.videoContainer {
+		width: 60%;
+		height: 134px;
+	}
+	/* Different height for Info page. */
+	.info .videoContainer {
+		width: 60%;
+		height: 160px;
+	}	
+}
+
+@media(max-width: 984px){
+	.videoContainer {
+		height: 240px;
+	}
+	/* Different height for Info page. */
+	.info .videoContainer {
+		height: 250px;
+	}
+}
+
+@media(max-width: 767px){
+	.videoContainer {
+		width: 100%;
+		height: 190px;
+	}
+	/* Different height for Info page. */
+	.info .videoContainer {
+		width: 100%;
+		height: 354px;
+	}
+}
+
+@media(max-width: 480px){
+	.videoContainer {
+		height: 224px;
+	}
+	/* Different height for Info page. */
+	.info .videoContainer {
+		height: 210px;
+	}
+}
+
+@media(max-width: 350px){
+	.videoContainer {
+		height: 160px;
+	}
+	/* Different height for Info page. */
+	.info .videoContainer {
+		height: 138px;
+	}
+}
+
+.video p {
+	color: #fff;
+	font-family: "Nunito", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 21px;
+	margin: 0;
+	position: relative;
+	z-index: 9;
+}
+
+/* Get rid of underline! */
+.relatedContent a.video:hover, .relatedContent a.video:active, .relatedContent a.video:focus {
+	text-decoration: none;
+}
+
+/* Hero headers for various devices */
+@media(max-width: 767px){
+	.video h1 {
+		font-size: 40px;
+		line-height: 49px;
+	}
+}
+
+@media(max-width: 400px){
+	.video h1 {
+		font-size: 40px;
+		line-height: 49px;
+	}
+}
+
+.video.intro {
+	margin-top: 0;
+}
+
+.video .navbar {
+	font-size: 11px;
+	line-height: 1.6;
+}
+
+/*Overwite bootstrap*/
+.container .video, .container-fluid .video {
+	border-radius: 0;
+}
+
+/* Jumbotron Hero icon. */
+#image-icon-video {
+	margin: 0 auto;
+	position: relative;
+	z-index: 9;
+}
+
+.page-content-video{
+	text-align: center;
+	/*what's this for?*/
+	/*  font-size: 2em; */
+	padding: 10px;
+}
+
+/* Jumbotron Overlay styles */
+.container-fluid .videos {
+	padding: 0;
+}
+
+.videoOverlay {
+	background-color: #000;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	z-index: 5;
+	top: -100%;
+	opacity: .3;
+}
+
+				/* Don't think we need this. */
+				/*responsive Youtube iFRAME links. DELETE - not going to use.*/
+
+				/*.video-container {
+					position: relative;
+					padding-bottom: 56.25%;
+					padding-top: 30px; 
+					height: 0; 
+					overflow: hidden;
+					margin-bottom: 20px;
+				}
+
+				.video-container iframe,
+				.video-container object,
+				.video-container embed {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+				}*/
+
+
+/* _________________ Page Sidenav _________________ */
+
+
+.side-nav-container {
+	padding: 0;
+	display: block;
+	margin-top: 36px;
+}
+
+@media (min-width: 1180px) {
+	.side-nav-container {
+		width: 194px;
+	}
+}
+
+@media (max-width: 992px){
+	.side-nav-container {
+		display: none;
+	}
+}
+
+.side-nav-container nav.nav-sidebar {
+}
+
+.side-nav-container nav.nav-sidebar ul.nav.sidenav {
+}
+
+.side-nav-container nav.nav-sidebar ul.nav.sidenav li {
+}
+
+.side-nav-container nav.nav-sidebar ul.nav.sidenav li ul li a {
+	color: #000;
+	display: none;
+}
+
+/*Side nav fixed position*/
+
+.affix, .affix-top, .affix-bottom {
+	width: 194px;
+}
+
+nav.nav-sidebar.affix-top {
+    position: fixed;
+}
+
+nav.nav-sidebar a.back-to-top, .nav-sidebar a {
+	display: block;
+}
+
+.affix {
+	top: 1px;
+}
+
+@media (min-width: 1200px) {
+	.affix {
+	}         
+}
+
+.affix-bottom {
+}
+
+/* Keep the nav stucture visibile */
+#page-nav li ul.nav {
+	display: block;
+}
+
+/* Nav styling */
+#page-nav .active {
+	font-weight: bold;
+}
+
+/*what's this for?*/
+#page-nav .nav {
+	/*display: none;*/
+}
+
+#page-nav .active .nav {
+	display: block;
+}
+
+/* Subheads */
+#page-nav li a.sub-head, .relatedContent .sub-head {
+	font-family: "Nunito", Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	color: #646464;
+	text-align: center;
+	display: block;
+	/* Square page nav off with top of section. */
+	margin-top: 8px;
+}
+
+.relatedContent .sub-head {
+	font-size: 24px;
+	line-height: 24px;
+	margin: 0 0 18px 0;
+	color: #139f58;
+}
+
+/* Inside info pages. */
+h4.intro {
+	font-family: "Nunito", Arial, Helvetica, sans-serif;
+	margin: 0 0 20px 28px;
+	color: #646464;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+/* subheads */
+#page-nav li a.sub-head:active, 
+#page-nav li a.sub-head:hover {
+	color: #646464;
+}
+
+/* Page Nav colors */
+
+/*base "Page Nav"*/
+#page-nav li ul.nav li {
+	background-color: #b1b1b1;
+	margin: 6px 0;
+	padding: 0 0;
+}
+
+/*active "Page Nav" */
+#page-nav li.page-navigation ul.nav li:active, 
+#page-nav li.page-navigation ul.nav li:hover,
+#page-nav li.page-navigation.active ul.nav li.active {
+	background-color: #139f58;
+}
+
+/* Page Nav positioning for Font Awesome glyphs. */
+#page-nav li ul.nav li a i.fa {
+    color: #fff;
+    display: inline-block;
+    float: right;
+}
+
+/* Realted Topics nav */
+/*colors*/
+#page-nav.nav li.related-topics ul li:nth-child(1) {
+	background-color: #fcb31c;
+}
+
+#page-nav.nav li.related-topics ul li:nth-child(2) {
+	background-color: #b55aa2;
+}
+
+#page-nav.nav li.related-topics ul li:nth-child(3) {
+	background-color: #73c9ee;
+}
+
+/* Featured Location nav */
+#page-nav li a.sub-head.featured {
+	color: #f05a61;
+}
+
+/* Map link background color */
+#page-nav.nav li.featured-location ul li {
+	background-color: transparent;
+}
+
+/* Other Map stuff - probably a PLACEHOLDER. Leave for now.*/
+
+/* format featured location */
+#page-nav li .location-map ul.location-info {
+	margin: 0;
+	padding: 0;
+}					
+
+#page-nav li.featured-location ul.nav li div.location-map ul.location-info li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#page-nav li.featured-location div p {
+	font-family: "Nunito", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+	text-align: center;
+}
+
+#page-nav li.featured-location div p.location-title {
+	margin: 22px 0 12px 0;
+	color: #f05a61;
+	font-size: 14px;
+	line-height: 16px;
+	text-transform: uppercase;
+}
+
+#page-nav li.featured-location div p.location-title.hours {
+	margin: 15px 0 12px 0;
+}
+
+/* Other Links nav */
+#page-nav.nav li.other-links ul li:nth-child(1) {
+	background-color: #a1d387;
+}
+
+#page-nav.nav li.other-links ul li:nth-child(2) {
+	background-color: #b1b1b1;
+}
+
+/* links */
+#page-nav .nav a {
+	font-family: "Nunito", Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+#page-nav li.featured-location ul.location-info li div p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: .75;
+}
+
+/*Active/selected */
+#page-nav .nav .active a,
+#page-nav .nav .active:hover a,
+#page-nav .nav .active:focus a {
+	color: #eee;
+}
+
+/* Bootstrap overwrite */
+#page-nav li a:focus, 
+#page-nav li a:hover {
+	background-color: transparent;
+	border: solid 0px transparent;
+	color: #eee;
+}
+
+/* Google Map thumbnail */
+#page-nav .location-map {
+	width: 195px;
+	/*height: 121px;*/	/*leave it? - it breaks all info under the map. */
+	margin: 0 auto;
+}
+
+#page-nav .location-map img {		
+}
+
+/* _________________ Media Queries _________________ */
+/* Fix these and put them where they need to go. */
+
+/*move this up under nav?*/
+@media (max-width: 767px) {
+	.navbar-bg-col { 
+		background-color: transparent; border: 0px;
+	}
+	.navbar-bg-col-1 { 
+		background-color: transparent; border: 0px;
+	}
+	.nav>li>a { color: #000000; }
+	.nav { 
+		margin-top: -10px;
+		padding-left: 0px;
+	}
+	/*move this*/
+	/*Mobile Nav Title*/
+	#pageNavTitleMobile {
+		display: block;
+		color: #009a3d;
+		margin: 0;
+	}
+	/*Hide on mobile Info pages. */
+	.info #pageNavTitleMobile {
+		display: none;
+	}
+	.panel-title {
+		color: #fff;
+		font-size: 22px;
+		line-height: 24px;
+		margin: 0 0 0 0px;
+	}
+}
+
+/*Home Page Button*/
+p.buttonLarge {
+	text-align: center;
+	margin: 0;
+}
+
+.btn-success {
+	background-image: none;
+	background-repeat: none;
+	border-color: transparent;
+}
+
+.btn-danger, .btn-default, .btn-info, .btn-primary, .btn-success, .btn-warning {
+	box-shadow: none;
+	text-shadow: none;
+}
+
+.btn-group-lg > .btn, .btn-lg {
+	border-radius: 0;
+	font-size: 18px;
+	line-height: 1.33333;
+	padding: 10px 16px;
+}
+
+.btn-success {
+	background-color: #009a3d;
+	border-color: transparent;
+	color: #fff;
+}
+
+.btn-success:focus, .btn-success:hover {
+	background-color: #419641;
+}
+
+/* _________________ Footer _________________ */
+
+footer {
+	background-color: #f1f4f8;
+	border-top: solid 1px #d0d4d8;
+	margin: 40px 0 0 0;
+	padding: 36px 0 4% 0;
+}
+
+footer .container {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 100;
+	max-width: 1220px;
+	margin: 0 auto;
+}
+
+footer .container li.copyright {
+	font-family: "Nunito", Arial, Helvetica, sans-serif;
+}
+
+footer ul {
+	list-style-position: outside;
+	list-style: none;
+}
+
+footer ul li {
+}
+
+footer ul.row-social {
+	max-width: 528px;
+	margin: 0 auto 36px auto;
+	padding: 0;
+	min-height: 50px;
+}
+
+footer ul.row-social li {
+	width: 50px;
+	float: left;
+	margin: 0 7px 7px 0;
+	display: inline;
+}
+
+@media (max-width: 524px) {
+	footer ul.row-social li {
+		width: 50px;
+		float: left;
+		margin: 0 14px 14px 0;
+		display: inline;
+	}
+	footer ul.row-social li:last-child {
+		margin: 0;
+	}
+}
+
+footer ul.row-social li:last-child {
+	margin: 0;
+}
+
+footer ul.row-social li.divider {
+	width: 1px;
+	height: 50px;
+	border-right: solid 1px #636363;
+	padding: 0;
+	/*account for magin before divider*/
+	margin: 0 13px 0 6px;
+}
+
+@media (max-width: 604px) {
+	footer ul.row-social li.divider {
+		display: none;
+	}
+}
+
+footer ul.row-copyright {
+	max-width: 690px;
+	height: 24px;
+	margin: 36px auto 0 auto;
+	padding: 0;
+}
+
+@media (max-width: 524px) {
+	footer ul.row-copyright {
+		margin: 36px auto 0 auto;
+	}
+}
+
+footer ul.row-copyright li {
+	float: left;
+	margin: 0 0 0 0;
+}
+
+footer ul.row-copyright li a {
+	color: #646464;
+}
+
+footer ul.row-copyright li a:active, footer ul.row-copyright li a:hover {
+	color: #646464;
+}
+
+footer ul.row-copyright li:nth-child(1) {
+	min-width: 90px;
+}
+
+footer ul.row-copyright li:nth-child(3) {
+	min-width: 104px;
+	margin: 0 14px 0 0;
+}
+
+footer ul.row-copyright li.divider {
+	width: 1px;
+	height: 20px;
+	border-right: solid 1px #636363;
+	padding: 0;
+	margin: 0 7px;
+}
+
+footer ul.row-middle {
+	margin: 0 auto;
+	padding: 0;
+}
+
+footer ul.row-middle li ul {
+	/*float: left;*/
+	/*width: 33%;*/
+	margin: 0;
+	padding: 0;
+}
+
+footer ul.row-middle li ul.column-one, footer ul.row-middle li ul.column-two, footer ul.row-middle li ul.column-three, footer ul.row-middle li ul.column-four {
+	margin: 0 auto;
+}
+
+/*keep ULs in 3-columns until mobile*/
+/*   TRASH THIS QUERY?   */
+@media (min-width: 767px){
+	footer ul.row-middle li ul.column-one, footer ul.row-middle li ul.column-two, footer ul.row-middle li ul.column-three, footer ul.row-middle li ul.column-four {
+	}
+}
+
+footer ul li ul li a {
+	color: #646464;
+	font-size: 15px
+}
+
+footer ul li ul li a:active, footer ul li ul li a:hover {
+	color: #646464;
+}
+
+/* Probably TEMP - trash later?... */
+footer ul.row-middle li ul.column-one {
+}
+
+footer ul.row-middle li ul.column-two {
+}
+
+footer ul.row-middle li ul.column-three {
+}
+
+footer ul.row-middle li ul.column-four {
+}
+
+footer ul.row-middle li ul li {
+	padding: 2px 0;
+}
+
+/*US World Report image*/
+footer ul.column-four li a img.img-responsive {
+	display: block;
+	height: auto;
+	max-width: 40%;
+}
+
+@media (max-width: 992px){
+	footer ul.column-four li a img.img-responsive {
+		display: block;
+		height: auto;
+		max-width: 10%;
+		margin-top: 8px;
+	}
+}
+
+/*type size and padding gets bigger for mobile*/
+@media (max-width: 767px) {
+	footer ul.row-copyright.Clearfix li:last-child {
+		margin-top: 10px;
+	}
+	footer ul.row-copyright.Clearfix li a {
+		font-size: 16px;
+	}
+	footer ul.row-middle li ul li {
+		padding: 6px 0;
+	}
+	footer ul li ul li a {
+		font-size: 16px
+	}
+}
+
+/* __________________________________ Newly Added - Move __________________________________ */
+/* ________________________________________________________________________________________ */
+
+
+/* For jQuery Window width function - FOR DEV */
+.jQWinHeightWidth {
+	color: red;
+	border: solid 1px red;
+	padding: 6px;
+	width: 300px;
+}
+
+@media (width: 800px) {		/**/
+	.jQWinHeightWidth {
+		color: green;
+	}
+}
+
+
